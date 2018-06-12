@@ -17,4 +17,4 @@ x = np.array([i for i in range(1, int('0x2000000', 16), 1)])
 logisticmap_loopCalc(10, x, 6700417, 22)
 t2 = time.time()
 diff_time = t2 - t1
-print(f"time: {diff_time} sec")
+print('time: {0} sec'.format(diff_time))
