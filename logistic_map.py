@@ -12,8 +12,7 @@ def logisticmap_loopCalc(num, x, p, mu):
 	return x
 
 t1 = time.time()
-x = np.array([i for i in range(1, int('0x2000000', 16), 1)])
-#x = np.array([i for i in range(1, 10, 1)])
+x = np.arange(1, int('0x2000000', 16), dtype=np.int64)
 logisticmap_loopCalc(10, x, 6700417, 22)
 t2 = time.time()
 diff_time = t2 - t1
